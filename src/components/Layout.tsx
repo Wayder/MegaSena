@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: "column"
     },
     header: {
-      marginTop: theme.spacing(3)
+      margin: theme.spacing(3, 0, 3)
     }
   })
 );
