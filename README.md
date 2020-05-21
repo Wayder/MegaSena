@@ -1,0 +1,2 @@
+# MegaSena
+Created with CodeSandbox
