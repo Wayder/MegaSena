@@ -1,19 +1,18 @@
 import {
+  Box,
   Button,
-  Typography,
-  Paper,
   CircularProgress,
-  Box
+  Paper,
+  Typography
 } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { fade } from "@material-ui/core/styles/colorManipulator";
 import * as React from "react";
 import { DigitsSelect } from "./components/DigitsSelect";
 import { GamesInput } from "./components/GamesInput";
 import { Layout } from "./components/Layout";
 import { Card, CardStatus, NumberGrid } from "./components/NumberGrid";
 import { UseNumbersSelect } from "./components/UseNumbersSelect";
-
-import { fade } from "@material-ui/core/styles/colorManipulator";
 import { useStateLocal } from "./useStateLocal";
 
 const useStyles = makeStyles((theme: Theme) =>

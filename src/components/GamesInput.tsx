@@ -1,6 +1,6 @@
-import * as React from "react";
 import { TextField } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import * as React from "react";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
