@@ -1,12 +1,8 @@
 {
-  "name": "react-ts",
+  "name": "megasena",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
-  "keywords": [
-    "typescript",
-    "react",
-    "starter"
-  ],
+  "description": "Ferramenta de auxílio e geração de jogos para a Mega-Sena.",
+  "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
     "@material-ui/core": "4.9.13",
