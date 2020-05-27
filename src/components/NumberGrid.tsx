@@ -20,16 +20,21 @@ const useStyles = makeStyles((theme: Theme) =>
     paper: {
       padding: theme.spacing(1.5),
       textAlign: "center",
-      fontSize: "1.2em",
+      fontSize: "1.5em",
       cursor: "pointer",
+      textShadow: "2px 2px #222",
       userSelect: "none",
       "&:hover": {
         backgroundColor: fade(theme.palette.primary.dark, 0.3)
       }
     },
     checked: {
-      backgroundColor: "rgba(64, 255, 192, 0.1)",
-      color: "rgba(64, 255, 192, 0.9)"
+      backgroundColor: fade(theme.palette.primary.main, 0.7),
+      // color: "rgba(128, 255, 192, 1)",
+      fontWeight: "bold",
+      "&:hover": {
+        backgroundColor: fade(theme.palette.primary.main, 0.7)
+      }
     }
   })
 );
@@ -38,7 +43,7 @@ export function NumberGrid({ numbers, handler }: NumberGridProps) {
   const classes = useStyles();
 
   return (
-    <GridList cols={10} spacing={3} cellHeight={50}>
+    <GridList cols={10} spacing={3} cellHeight={56}>
       {Object.entries(numbers).map(([n, s]: [string, CardStatus]) => {
         return (
           <GridListTile key={n} cols={1}>
